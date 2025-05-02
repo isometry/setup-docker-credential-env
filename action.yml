@@ -1,0 +1,26 @@
+name: "Setup docker-credential-env"
+description: "Install docker-credential-env and configure Docker to use it for specified registries"
+author: "isometry"
+branding:
+  icon: "lock"
+  color: "blue"
+
+inputs:
+  version:
+    description: "Version of docker-credential-env to install"
+    required: false
+    default: latest
+  registries:
+    description: "Space-separated list of OCI registries to configure"
+    required: false
+    default: ghcr.io
+
+outputs:
+  binary-path:
+    description: "Path to the installed docker-credential-env binary"
+  version:
+    description: "The version of docker-credential-env that was installed"
+
+runs:
+  using: node20
+  main: dist/index.js

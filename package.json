@@ -1,0 +1,35 @@
+{
+    "name": "docker-credential-env-setup-action",
+    "version": "1.0.0",
+    "description": "GitHub Action to install docker-credential-env and configure registries",
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "ncc build src/index.ts -o dist --minify",
+        "format": "prettier --write src/**/*.ts",
+        "all": "npm run format && npm run build",
+        "update-deps": "npx npm-check-updates -u && npm install"
+    },
+    "keywords": [
+        "github",
+        "actions",
+        "docker",
+        "credentials"
+    ],
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "@actions/core": "^1.11.1"
+    },
+    "devDependencies": {
+        "@actions/exec": "^1.1.1",
+        "@actions/http-client": "^2.2.3",
+        "@actions/io": "^1.1.3",
+        "@actions/tool-cache": "^2.0.2",
+        "@types/node": "^22.15.3",
+        "@typescript-eslint/eslint-plugin": "^8.31.1",
+        "@typescript-eslint/parser": "^8.31.1",
+        "@vercel/ncc": "0.38.3",
+        "prettier": "^3.5.3",
+        "typescript": "^5.8.3"
+    }
+}
