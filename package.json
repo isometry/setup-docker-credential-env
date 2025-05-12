@@ -27,7 +27,7 @@
         "@actions/tool-cache": "^2.0.2",
         "@types/node": "^22.15.3",
         "@typescript-eslint/eslint-plugin": "^8.31.1",
-        "@typescript-eslint/parser": "^8.31.1",
+        "@typescript-eslint/parser": "^8.32.0",
         "@vercel/ncc": "0.38.3",
         "prettier": "^3.5.3",
         "typescript": "^5.8.3"
