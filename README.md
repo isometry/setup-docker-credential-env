@@ -52,7 +52,7 @@ jobs:
       - uses: actions/checkout@v3
       
       - name: Setup docker-credential-env
-        uses: isometry/docker-credential-env/setup@v1
+        uses: isometry/setup-docker-credential-env@v1
       
       - name: Build and push
         run: |
@@ -78,7 +78,7 @@ jobs:
       - uses: actions/checkout@v3
       
       - name: Setup docker-credential-env
-        uses: isometry/docker-credential-env/setup@v1
+        uses: isometry/setup-docker-credential-env@v1
         with:
           registries: 'ghcr.io docker.io quay.io'
       
@@ -115,7 +115,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Setup docker-credential-env
-        uses: isometry/docker-credential-env/setup@v1
+        uses: isometry/setup-docker-credential-env@v1
         with:
           registries: '123456789012.dkr.ecr.us-east-1.amazonaws.com'
 
