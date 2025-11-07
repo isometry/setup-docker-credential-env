@@ -22,7 +22,7 @@
     },
     "devDependencies": {
         "@actions/exec": "^1.1.1",
-        "@actions/http-client": "^2.2.3",
+        "@actions/http-client": "^3.0.0",
         "@actions/io": "^2.0.0",
         "@actions/tool-cache": "^2.0.2",
         "@types/node": "^24.8.1",
